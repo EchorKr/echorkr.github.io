@@ -407,6 +407,164 @@ body {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
+.project-subtitle {
+    font-size: 14px;
+    color: var(--text-light);
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+
+.paper-keywords {
+    font-size: 13px;
+    color: var(--text-light);
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-color);
+}
+
+/* 荣誉奖项 */
+.honors {
+    padding: 100px 0;
+    background: var(--bg-primary);
+}
+
+.honors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.honor-card {
+    background: var(--bg-secondary);
+    border-radius: 16px;
+    padding: 28px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.honor-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.honor-card.highlight {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(139, 92, 246, 0.08) 100%);
+    border-color: rgba(99, 102, 241, 0.2);
+}
+
+.honor-icon {
+    font-size: 32px;
+    flex-shrink: 0;
+}
+
+.honor-content {
+    flex: 1;
+}
+
+.honor-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+}
+
+.honor-award {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 8px;
+}
+
+.honor-project {
+    font-size: 13px;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* 更多项目与文档 */
+.more-projects {
+    padding: 100px 0;
+    background: var(--bg-secondary);
+}
+
+.project-group {
+    margin-bottom: 48px;
+}
+
+.group-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    padding-left: 8px;
+    border-left: 3px solid var(--accent-color);
+}
+
+.docs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.doc-card {
+    background: var(--bg-primary);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.doc-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.doc-card.highlight {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
+    border-color: rgba(99, 102, 241, 0.2);
+}
+
+.doc-icon {
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.doc-info {
+    flex: 1;
+}
+
+.doc-info h4 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+}
+
+.doc-info p {
+    font-size: 13px;
+    color: var(--text-light);
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.doc-type {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--accent-color);
+    background: rgba(99, 102, 241, 0.1);
+    padding: 3px 10px;
+    border-radius: 12px;
+}
+
 /* 技能图谱 */
 .skills {
     padding: 100px 0;
